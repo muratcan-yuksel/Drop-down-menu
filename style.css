@@ -1,0 +1,16 @@
+.navbar {
+	height: 40px;
+	width: 100%;
+	background: #6a6563;
+	background: -webkit-linear-gradient(bottom left, #6a6563, #fcd1b2);
+	background: -moz-linear-gradient(bottom left, #6a6563, #fcd1b2);
+	background: linear-gradient(to top right, #6a6563, #fcd1b2);
+}
+.menu {
+	height: 40px;
+	width: 50px;
+}
+
+.items {
+	display: none;
+}
