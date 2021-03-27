@@ -9,8 +9,27 @@
 .menu {
 	height: 40px;
 	width: 50px;
+	background: #6a6563;
+	background: -webkit-linear-gradient(bottom left, #6a6563, #fcd1b2);
+	background: -moz-linear-gradient(bottom left, #6a6563, #fcd1b2);
+	background: linear-gradient(to top right, #6a6563, #fcd1b2);
 }
 
 .items {
-	display: none;
+	/* display: none; */
+	visibility: hidden;
+	transition: transform 500ms ease-in-out;
+	/* the following means doN't do anything on hover
+	so that when you hover on the pink box
+	it wouldn't trigger again*/
+	pointer-events: none;
+}
+
+.menu.active .items {
+	transform: translate(0px, 40px);
+	/* display: block; */
+	visibility: visible;
+}
+.item {
+	margin-bottom: 12px;
 }
