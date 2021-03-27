@@ -16,20 +16,32 @@
 }
 
 .items {
+	height: 160px;
+	width: 85px;
+
+	background: #6a6563;
+	background: -webkit-linear-gradient(bottom left, #6a6563, #fcd1b2);
+	background: -moz-linear-gradient(bottom left, #6a6563, #fcd1b2);
+	background: linear-gradient(to top right, #6a6563, #fcd1b2);
 	/* display: none; */
+	font-weight: 700;
+	border-radius: 5%;
 	visibility: hidden;
-	transition: transform 500ms ease-in-out;
+	transition: transform 700ms ease-in-out;
 	/* the following means doN't do anything on hover
 	so that when you hover on the pink box
 	it wouldn't trigger again*/
 	pointer-events: none;
+	color: white;
 }
 
 .menu.active .items {
-	transform: translate(0px, 40px);
+	transform: translate(0, 40px);
 	/* display: block; */
 	visibility: visible;
 }
 .item {
 	margin-bottom: 12px;
+	margin-left: 5px;
+	margin-top: 5px;
 }
